@@ -7,6 +7,7 @@ import { SectionHeading } from "./section-heading";
 import { getAllTechnician } from "../../_actions/getAllTechnician";
 
 function toHomePro(t: TechnicianListItem): HomePro {
+  const id = t.userId;
   const name = t.user.name;
   const initials = name
     .split(" ")
@@ -17,6 +18,7 @@ function toHomePro(t: TechnicianListItem): HomePro {
     .toUpperCase();
 
   return {
+    id,
     name,
     initials,
     skill: t.skills[0] ?? "Technician",
@@ -45,14 +47,14 @@ export async function Pros() {
         <div className="grid gap-4 md:grid-cols-3">
           {list.map((pro: HomePro) => (
             <Card
-              key={pro.name}
-              className="flex flex-col rounded-sm border-ink/25 bg-ticket-hi p-6 shadow-none transition-all hover:-translate-y-0.5 hover:border-ink"
+              key={pro.id}
+              className="flex flex-col p-6 transition-all hover:-translate-y-0.5 hover:border-ink"
             >
               <div className="flex items-center justify-between">
                 <span className="flex size-12 items-center justify-center rounded-full border-2 border-ink/60 bg-ticket font-display text-base font-bold">
                   {pro.initials}
                 </span>
-                <Badge className="rounded-sm border border-safety bg-transparent font-mono text-[10px] font-bold uppercase tracking-widest text-safety">
+                <Badge className="border border-safety bg-transparent font-mono text-[10px] font-bold uppercase tracking-widest text-safety">
                   {"\u2713"} verified
                 </Badge>
               </div>

@@ -108,7 +108,7 @@ export function ReviewDialog({
                 className={
                   active
                     ? "animate-punch text-amber-500"
-                    : "text-zinc-300 transition-colors group-hover:text-amber-500"
+                    : "text-steel/30 transition-colors group-hover:text-amber-500"
                 }
               >
                 {active ? ALLOWED : IDLE}
@@ -135,7 +135,7 @@ export function ReviewDialog({
         rows={3}
         maxLength={500}
         placeholder="What should the next customer know?"
-        className="w-full resize-none rounded-lg border border-input bg-background px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-1 focus-visible:ring-ring focus-visible:outline-none"
+        className="w-full resize-none rounded-sm border-2 border-ink/50 bg-ticket px-3 py-2 text-sm text-ink placeholder:text-steel/60 focus-visible:border-safety focus-visible:ring-1 focus-visible:ring-safety/30 focus-visible:outline-none"
       />
 
       <div className="mt-5 flex justify-end gap-2">
@@ -143,7 +143,7 @@ export function ReviewDialog({
           type="button"
           onClick={onClose}
           disabled={pending}
-          className="rounded-md border border-border px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground disabled:opacity-60"
+          className="rounded-sm border-2 border-ink/40 px-3 py-2 text-sm font-medium text-steel transition-colors hover:border-ink hover:bg-ticket hover:text-ink disabled:opacity-60"
         >
           Not now
         </button>
@@ -151,7 +151,7 @@ export function ReviewDialog({
           type="button"
           onClick={handleSubmit}
           disabled={pending || rating < 1}
-          className="flex items-center gap-2 rounded-md bg-primary px-3 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80 disabled:opacity-60"
+          className="flex items-center gap-2 rounded-sm bg-primary px-3 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80 disabled:opacity-60"
         >
           {pending && (
             <span

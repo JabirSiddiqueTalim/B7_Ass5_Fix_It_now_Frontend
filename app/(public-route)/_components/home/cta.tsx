@@ -19,7 +19,7 @@ export function Cta() {
           <Button
             asChild
             size="lg"
-            className="rounded-md font-display text-base font-bold"
+            className="font-display text-base font-bold"
           >
             <Link href="/register">Become a technician</Link>
           </Button>
@@ -27,7 +27,7 @@ export function Cta() {
             asChild
             size="lg"
             variant="outline"
-            className="rounded-md border-2 border-bone/30 bg-transparent font-display text-base font-bold text-bone hover:border-bone/60 hover:bg-transparent hover:text-bone"
+            className="border-2 border-bone/30 bg-transparent font-display text-base font-bold text-bone hover:border-bone/60 hover:bg-transparent hover:text-bone"
           >
             <Link href="#services">Browse services</Link>
           </Button>

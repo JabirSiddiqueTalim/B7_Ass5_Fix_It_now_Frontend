@@ -42,7 +42,7 @@ export function HowItWorks() {
           />
           {steps.map((step) => (
             <li key={step.n} className="relative">
-              <Card className="flex h-full flex-col rounded-sm border-ink/25 bg-ticket-hi p-6 shadow-none">
+              <Card className="flex h-full flex-col p-6">
                 <span className="flex size-9 items-center justify-center rounded-full border-2 border-ink/60 bg-ticket font-mono text-sm font-bold text-ink">
                   {step.n}
                 </span>
@@ -51,7 +51,7 @@ export function HowItWorks() {
                   {step.body}
                 </p>
                 <Badge
-                  className={`mt-5 inline-flex w-fit rounded-sm font-mono text-[10px] font-bold uppercase tracking-widest ${step.tagClass}`}
+                  className={`mt-5 inline-flex w-fit font-mono text-[10px] font-bold uppercase tracking-widest ${step.tagClass}`}
                 >
                   {step.tag}
                 </Badge>

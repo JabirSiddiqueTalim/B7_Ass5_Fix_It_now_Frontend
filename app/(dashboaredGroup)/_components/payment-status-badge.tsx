@@ -2,10 +2,10 @@ import type { PaymentStatus } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 const statusStyles: Record<PaymentStatus, string> = {
-  PENDING: "border-amber-600/60 bg-amber-50 text-amber-900",
-  COMPLETED: "border-green-700/60 bg-green-50 text-green-900",
-  FAILED: "border-red-600/60 bg-red-50 text-red-900",
-  REFUNDED: "border-ink/30 bg-muted text-muted-foreground",
+  PENDING: "border-amber-700/60 bg-ticket text-amber-900 dark:border-amber-400/60 dark:text-amber-300",
+  COMPLETED: "border-green-800/60 bg-ticket text-green-900 dark:border-green-400/60 dark:text-green-300",
+  FAILED: "border-red-700/60 bg-ticket text-red-800 dark:border-red-400/60 dark:text-red-300",
+  REFUNDED: "border-ink/40 bg-ticket text-steel",
 };
 
 export function PaymentStatusBadge({ status }: { status: PaymentStatus }) {

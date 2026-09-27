@@ -174,7 +174,7 @@ export function BookServiceButton({
             aria-label={`Book ${title}`}
           >
             <div
-              className="my-auto w-full max-w-lg animate-ticket border-2 border-ink bg-ticket-hi shadow-[10px_10px_0_rgba(33,30,25,0.35)]"
+              className="my-auto w-full max-w-lg animate-ticket border-2 border-ink bg-ticket-hi shadow-[10px_10px_0_rgba(27,42,74,0.35)]"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex items-center justify-between gap-4 border-b-2 border-dashed border-ink/25 px-5 py-3 sm:px-6">

@@ -41,15 +41,17 @@ export function Dialog({
     >
       <div className="flex min-h-full items-center justify-center p-4">
         <div
-          className="w-full max-w-md rounded-xl bg-background p-6 text-foreground shadow-xl"
+          className="w-full max-w-md rounded-sm border-2 border-ink/80 bg-ticket-hi p-6 text-ink shadow-[6px_6px_0_rgba(27,42,74,0.25)]"
           onClick={(e) => e.stopPropagation()}
         >
-          <div className="mb-4 flex items-center justify-between">
-            <h2 className="text-lg font-semibold">{title}</h2>
+          <div className="mb-4 flex items-center justify-between border-b-2 border-dashed border-ink/25 pb-3">
+            <h2 className="font-display text-lg font-bold tracking-tight">
+              {title}
+            </h2>
             <button
               onClick={onClose}
               aria-label="Close dialog"
-              className="flex size-8 items-center justify-center rounded-md text-muted-foreground hover:bg-muted"
+              className="flex size-8 items-center justify-center rounded-sm border-2 border-ink/40 text-steel transition-colors hover:border-ink hover:bg-ticket hover:text-ink"
             >
               ✕
             </button>

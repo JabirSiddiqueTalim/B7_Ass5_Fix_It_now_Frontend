@@ -87,7 +87,7 @@ export function AdminCategoriesBoard({
               {categories.map((category) => (
                 <li
                   key={category.id}
-                  className="rounded-md border-2 border-ink bg-bone p-5 shadow-[4px_4px_0_rgba(33,30,25,0.1)]"
+                  className="rounded-md border-2 border-ink bg-bone p-5 shadow-[4px_4px_0_rgba(27,42,74,0.1)]"
                 >
                   <div className="flex flex-wrap items-start justify-between gap-3">
                     <div className="min-w-0">
@@ -109,8 +109,8 @@ export function AdminCategoriesBoard({
                       className={cn(
                         "inline-flex shrink-0 items-center gap-1.5 rounded-sm border-2 px-2 py-1 font-mono text-[10px] font-bold uppercase tracking-[0.18em]",
                         category.isActive
-                          ? "border-green-700/60 bg-green-50 text-green-900"
-                          : "border-ink/30 bg-muted text-muted-foreground"
+                          ? "border-green-800/60 bg-ticket text-green-900 dark:border-green-400/60 dark:text-green-300"
+                          : "border-ink/40 bg-ticket text-steel"
                       )}
                     >
                       <span
@@ -135,7 +135,7 @@ export function AdminCategoriesBoard({
           )}
         </section>
 
-        <aside className="h-fit rounded-md border-2 border-ink bg-bone p-5 shadow-[4px_4px_0_rgba(33,30,25,0.1)] lg:sticky lg:top-24">
+        <aside className="h-fit rounded-md border-2 border-ink bg-bone p-5 shadow-[4px_4px_0_rgba(27,42,74,0.1)] lg:sticky lg:top-24">
           <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em] text-safety">
             Add a category
           </p>

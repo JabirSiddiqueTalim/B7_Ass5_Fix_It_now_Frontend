@@ -8,7 +8,7 @@ export function StatCard({
   hint?: string;
 }) {
   return (
-    <div className="relative overflow-hidden rounded-md border-2 border-ink/80 bg-bone p-5 shadow-[4px_4px_0_rgba(33,30,25,0.12)]">
+    <div className="relative overflow-hidden rounded-md border-2 border-ink/80 bg-bone p-5 shadow-[4px_4px_0_rgba(27,42,74,0.12)]">
       <span
         aria-hidden
         className="absolute right-3 top-3 size-3 rounded-full bg-ticket-hi ring-2 ring-edge"

@@ -6,6 +6,7 @@ export interface HomeCategory {
 }
 
 export interface HomePro {
+  id: string;
   name: string;
   initials: string;
   skill: string;

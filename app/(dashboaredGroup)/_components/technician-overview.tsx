@@ -83,7 +83,7 @@ export function TechnicianOverview({
           <Link
             key={link.href}
             href={link.href}
-            className="group rounded-md border-2 border-ink bg-bone p-5 shadow-[4px_4px_0_rgba(33,30,25,0.1)] transition-transform hover:-translate-y-0.5"
+            className="group rounded-md border-2 border-ink bg-bone p-5 shadow-[4px_4px_0_rgba(27,42,74,0.1)] transition-transform hover:-translate-y-0.5"
           >
             <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em] text-safety">
               {link.label}

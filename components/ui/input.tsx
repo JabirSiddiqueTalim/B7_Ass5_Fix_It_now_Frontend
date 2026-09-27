@@ -9,7 +9,7 @@ export const Input = forwardRef<
     <input
       ref={ref}
       className={cn(
-        "h-10 w-full rounded-lg border border-input bg-background px-3 text-sm text-foreground placeholder:text-muted-foreground focus-visible:border-ring focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-60",
+        "h-10 w-full rounded-sm border-2 border-ink/50 bg-ticket px-3 text-sm text-ink placeholder:text-steel/60 focus-visible:border-safety focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-safety/30 disabled:cursor-not-allowed disabled:opacity-60",
         className
       )}
       {...props}
@@ -26,7 +26,7 @@ export const Textarea = forwardRef<
     <textarea
       ref={ref}
       className={cn(
-        "w-full rounded-lg border border-input bg-background px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus-visible:border-ring focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-60",
+        "w-full rounded-sm border-2 border-ink/50 bg-ticket px-3 py-2 text-sm text-ink placeholder:text-steel/60 focus-visible:border-safety focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-safety/30 disabled:cursor-not-allowed disabled:opacity-60",
         className
       )}
       {...props}
@@ -43,7 +43,7 @@ export const Select = forwardRef<
     <select
       ref={ref}
       className={cn(
-        "h-10 w-full rounded-lg border border-input bg-background px-3 text-sm text-foreground focus-visible:border-ring focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-60",
+        "h-10 w-full rounded-sm border-2 border-ink/50 bg-ticket px-3 text-sm text-ink focus-visible:border-safety focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-safety/30 disabled:cursor-not-allowed disabled:opacity-60",
         className
       )}
       {...props}

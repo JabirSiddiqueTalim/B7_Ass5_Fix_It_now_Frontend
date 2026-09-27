@@ -34,7 +34,7 @@ export default function Loading() {
           {"// FixItNow \u00b7 dispatch"}
         </p>
 
-        <article className="mt-4 grid grid-cols-[44px_1fr] overflow-hidden rounded-sm border-2 border-ink/80 bg-ticket-hi shadow-[10px_10px_0_rgba(20,17,13,0.25)]">
+        <article className="mt-4 grid grid-cols-[44px_1fr] overflow-hidden rounded-sm border-2 border-ink/80 bg-ticket-hi shadow-[10px_10px_0_rgba(14,28,54,0.25)]">
           <TicketStub top="FixItNow" bottom="FIN-.." width="w-11" hole="size-6" />
 
           <div className="p-5 sm:p-6">

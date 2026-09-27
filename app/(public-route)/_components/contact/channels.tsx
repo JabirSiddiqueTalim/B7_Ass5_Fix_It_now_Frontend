@@ -64,7 +64,7 @@ export function Channels() {
             return (
               <Card
                 key={channel.label}
-                className="group flex flex-col rounded-sm border-ink/25 bg-ticket-hi p-6 shadow-none transition-all hover:-translate-y-0.5 hover:border-safety"
+                className="group flex flex-col p-6 transition-all hover:-translate-y-0.5 hover:border-safety"
               >
                 {channel.href ? (
                   <a

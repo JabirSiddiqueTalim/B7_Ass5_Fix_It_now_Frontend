@@ -102,7 +102,7 @@ export function ServicesBoard({
               {services.map((service) => (
                 <li
                   key={service.id}
-                  className="rounded-md border-2 border-ink bg-bone p-5 shadow-[4px_4px_0_rgba(33,30,25,0.1)]"
+                  className="rounded-md border-2 border-ink bg-bone p-5 shadow-[4px_4px_0_rgba(27,42,74,0.1)]"
                 >
                   <div className="flex flex-wrap items-start justify-between gap-3">
                     <div className="min-w-0">
@@ -146,7 +146,7 @@ export function ServicesBoard({
           )}
         </section>
 
-        <aside className="h-fit rounded-md border-2 border-ink bg-bone p-5 shadow-[4px_4px_0_rgba(33,30,25,0.1)] lg:sticky lg:top-24">
+        <aside className="h-fit rounded-md border-2 border-ink bg-bone p-5 shadow-[4px_4px_0_rgba(27,42,74,0.1)] lg:sticky lg:top-24">
           <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em] text-safety">
             Add a service
           </p>

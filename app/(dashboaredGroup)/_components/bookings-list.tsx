@@ -24,7 +24,7 @@ export function BookingsList({ bookings }: { bookings: BookingListItem[] }) {
           {bookings.map((b) => (
             <li
               key={b.id}
-              className="rounded-md border-2 border-ink bg-bone shadow-[4px_4px_0_rgba(33,30,25,0.1)]"
+              className="rounded-md border-2 border-ink bg-bone shadow-[4px_4px_0_rgba(27,42,74,0.1)]"
             >
               <div className="flex flex-wrap items-center justify-between gap-2 border-b-2 border-dashed border-ink/15 px-5 py-3">
                 <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em] text-steel">

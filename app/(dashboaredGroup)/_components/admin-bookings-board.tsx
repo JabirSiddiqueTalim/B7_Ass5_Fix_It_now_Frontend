@@ -78,7 +78,7 @@ export function AdminBookingsBoard({
       <form
         action="/admin-dashboard/bookings"
         method="get"
-        className="flex flex-wrap items-end gap-3 rounded-md border-2 border-ink bg-bone p-4 shadow-[4px_4px_0_rgba(33,30,25,0.1)]"
+        className="flex flex-wrap items-end gap-3 rounded-md border-2 border-ink bg-bone p-4 shadow-[4px_4px_0_rgba(27,42,74,0.1)]"
       >
         <div className="min-w-0 flex-1 basis-48">
           <label
@@ -170,7 +170,7 @@ export function AdminBookingsBoard({
       </p>
 
       {bookings.length > 0 ? (
-        <div className="overflow-hidden rounded-md border-2 border-ink bg-bone shadow-[4px_4px_0_rgba(33,30,25,0.1)]">
+        <div className="overflow-hidden rounded-md border-2 border-ink bg-bone shadow-[4px_4px_0_rgba(27,42,74,0.1)]">
           <ul className="divide-y divide-dashed divide-ink/15">
             {bookings.map((b) => (
               <li

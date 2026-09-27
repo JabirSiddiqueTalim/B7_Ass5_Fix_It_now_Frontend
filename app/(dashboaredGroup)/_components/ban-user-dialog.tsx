@@ -52,7 +52,7 @@ export function BanUserDialog({
         <button
           type="button"
           onClick={onClose}
-          className="rounded-md border border-border px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+          className="rounded-sm border-2 border-ink/40 px-3 py-2 text-sm font-medium text-steel transition-colors hover:border-ink hover:bg-ticket hover:text-ink"
         >
           Keep
         </button>
@@ -61,9 +61,9 @@ export function BanUserDialog({
           onClick={handleConfirm}
           disabled={pending}
           className={cn(
-            "rounded-md px-3 py-2 text-sm font-medium text-white transition-colors disabled:opacity-60",
+            "rounded-sm border-2 border-ink/80 px-3 py-2 text-sm font-medium text-bone transition-colors disabled:opacity-60",
             banning
-              ? "bg-red-600 hover:bg-red-700"
+              ? "bg-red-700 hover:bg-red-800"
               : "bg-green-700 hover:bg-green-800"
           )}
         >

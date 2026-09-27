@@ -109,7 +109,7 @@ export function TechnicianProfileForm({ user }: { user: User }) {
 
       <form
         onSubmit={handleSubmit}
-        className="space-y-6 rounded-md border-2 border-ink bg-bone p-6 shadow-[4px_4px_0_rgba(33,30,25,0.1)]"
+        className="space-y-6 rounded-md border-2 border-ink bg-bone p-6 shadow-[4px_4px_0_rgba(27,42,74,0.1)]"
       >
         <div className="grid gap-5 sm:grid-cols-2">
           <Field label="Full name" htmlFor="tp-name">

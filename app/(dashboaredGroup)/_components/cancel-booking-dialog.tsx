@@ -54,13 +54,13 @@ export function CancelBookingDialog({
         onChange={(e) => setReason(e.target.value)}
         rows={2}
         placeholder="Changed my mind…"
-        className="w-full rounded-lg border border-input bg-background px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-1 focus-visible:ring-ring focus-visible:outline-none"
+        className="w-full rounded-sm border-2 border-ink/50 bg-ticket px-3 py-2 text-sm text-ink placeholder:text-steel/60 focus-visible:border-safety focus-visible:ring-1 focus-visible:ring-safety/30 focus-visible:outline-none"
       />
       <div className="mt-5 flex justify-end gap-2">
         <button
           type="button"
           onClick={onClose}
-          className="rounded-md border border-border px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+          className="rounded-sm border-2 border-ink/40 px-3 py-2 text-sm font-medium text-steel transition-colors hover:border-ink hover:bg-ticket hover:text-ink"
         >
           Keep booking
         </button>
@@ -68,7 +68,7 @@ export function CancelBookingDialog({
           type="button"
           onClick={handleConfirm}
           disabled={pending}
-          className="rounded-md bg-red-600 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-red-700 disabled:opacity-60"
+          className="rounded-sm border-2 border-red-700/60 bg-transparent px-3 py-2 text-sm font-medium text-red-800 transition-colors hover:bg-red-700 hover:text-bone disabled:opacity-60"
         >
           {pending ? "Cancelling…" : "Cancel booking"}
         </button>

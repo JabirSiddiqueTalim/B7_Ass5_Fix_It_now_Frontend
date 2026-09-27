@@ -2,7 +2,7 @@
 
 This document maps every backend endpoint consumed by the FixItNow frontend to the exact component / server action that calls it, with demo request and response shapes for each.
 
-- **Base URL:** `https://b7-assignment4.vercel.app/` (dev fallback `http://localhost:3000`)
+- **Base URL:** `https://backend-ecru-five-26.vercel.app` (dev fallback `http://localhost:3000`)
 - **Auth:** `Authorization: Bearer <accessToken>` header (the token is also mirrored to an `accessToken` cookie by the backend on login)
 - **Envelope:** every response is `{ success, statusCode, message, data?, meta?, errorDetails? }`
 - **Money:** `hourlyRate`, `price`, `priceAtBooking`, `amount` are returned as **strings** (`"350.00"`) by the backend; the frontend converts with `Number()` for math and `formatBDT()` for display.

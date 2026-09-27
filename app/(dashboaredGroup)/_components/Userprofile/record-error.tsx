@@ -12,7 +12,7 @@ export function RecordError({ retryHref = "/dashboard/profile" }: { retryHref?: 
       </p>
       <Link
         href={retryHref}
-        className="mt-6 inline-block rounded-sm border-2 border-ink bg-safety px-5 py-2.5 font-display text-sm font-bold text-ink shadow-[3px_3px_0_rgba(33,30,25,0.25)] transition-transform hover:-translate-y-0.5 active:translate-y-0"
+        className="mt-6 inline-block rounded-sm border-2 border-ink bg-safety px-5 py-2.5 font-display text-sm font-bold text-ink shadow-[3px_3px_0_rgba(27,42,74,0.25)] transition-transform hover:-translate-y-0.5 active:translate-y-0"
       >
         Try again
       </Link>

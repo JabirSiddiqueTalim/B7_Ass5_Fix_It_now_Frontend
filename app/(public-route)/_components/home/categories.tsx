@@ -47,7 +47,7 @@ export async function Categories() {
           {allCategories.map((category : Category) => (
             <Card
               key={category.id}
-              className="group flex items-center gap-3 rounded-sm border-ink/25 bg-ticket-hi p-4 shadow-none transition-all hover:-translate-y-0.5 hover:border-ink"
+              className="group flex items-center gap-3 p-4 transition-all hover:-translate-y-0.5 hover:border-ink"
             >
               <Link
                 href="/services"

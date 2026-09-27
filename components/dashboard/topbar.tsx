@@ -66,7 +66,7 @@ export function Topbar({
               {user?.name?.trim().charAt(0).toUpperCase() ?? role.charAt(0)}
             </span>
           </div>
-          <span className="animate-stamp rounded-sm border-2 border-ink px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-ink shadow-[2px_2px_0_rgba(33,30,25,0.18)]">
+          <span className="animate-stamp rounded-sm border-2 border-ink px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-ink shadow-[2px_2px_0_rgba(27,42,74,0.18)]">
             {role}
           </span>
           <span className="text-ink">

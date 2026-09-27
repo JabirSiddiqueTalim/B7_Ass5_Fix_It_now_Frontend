@@ -16,7 +16,7 @@ export interface RegisterState {
 }
 
 const BACKEND_URL =
-  process.env.BACKEND_URL ?? "https://b7-assignment4.vercel.app/";
+  process.env.BACKEND_URL ?? "https://backend-ecru-five-26.vercel.app";
 
 function readField(formData: FormData, key: string): string {
   const value = formData.get(key);

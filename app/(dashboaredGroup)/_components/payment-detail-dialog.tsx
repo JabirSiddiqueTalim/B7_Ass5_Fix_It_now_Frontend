@@ -9,8 +9,8 @@ import { getPaymentById } from "../_actions/getPaymentById";
 
 const STAMP: Record<PaymentStatus, { text: string; cls: string }> = {
   COMPLETED: { text: "PAID", cls: "border-safety text-safety/90" },
-  PENDING: { text: "AWAITING", cls: "border-amber-600 text-amber-700" },
-  FAILED: { text: "VOID", cls: "border-red-600 text-red-700" },
+  PENDING: { text: "AWAITING", cls: "border-amber-700 text-amber-800" },
+  FAILED: { text: "VOID", cls: "border-red-700 text-red-800" },
   REFUNDED: { text: "REFUNDED", cls: "border-steel text-steel" },
 };
 
@@ -101,7 +101,7 @@ export function PaymentDetailDialog({
           <div className="h-4 w-52 rounded bg-ink/10" />
         </div>
       ) : detail ? (
-        <div className="relative overflow-hidden rounded-md border-2 border-ink bg-ticket-hi shadow-[4px_4px_0_rgba(33,30,25,0.15)]">
+        <div className="relative overflow-hidden rounded-md border-2 border-ink bg-ticket-hi shadow-[4px_4px_0_rgba(27,42,74,0.15)]">
           <Stamp status={detail.status} />
 
           <header className="border-b-2 border-dashed border-ink/25 px-5 py-4">

@@ -67,7 +67,7 @@ export function Developer() {
         </h2>
 
         <div className="group mt-10 grid gap-8 rounded-2xl border border-bone/20 bg-ink/45 p-6 shadow-[0_18px_45px_-20px_rgba(0,0,0,0.55)] transition hover:-translate-y-0.5 hover:border-safety/40 sm:p-8 md:grid-cols-[220px_1fr]">
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-[220px] overflow-hidden rounded-xl border border-bone/25">
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-[220px] overflow-hidden rounded-sm border border-bone/25">
             <Image
               src={"/developer.jpg"}
               alt={`Portrait of ${developer.name} `}
@@ -111,7 +111,7 @@ export function Developer() {
                   </>
                 );
                 const cls =
-                  "flex items-center gap-3 rounded-lg border border-bone/15 px-3 py-2.5 transition-colors hover:border-safety/60 hover:bg-white/5";
+                  "flex items-center gap-3 rounded-sm border border-bone/15 px-3 py-2.5 transition-colors hover:border-safety/60 hover:bg-white/5";
                 return (
                   <li key={link.label}>
                     {link.href ? (

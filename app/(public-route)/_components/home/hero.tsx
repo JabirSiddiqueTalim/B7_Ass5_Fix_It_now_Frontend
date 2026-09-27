@@ -27,7 +27,7 @@ export function Hero() {
             <Button
               asChild
               size="lg"
-              className="rounded-md font-display text-base font-bold"
+              className="font-display text-base font-bold"
             >
               <Link href="/services">Browse services</Link>
             </Button>
@@ -35,7 +35,7 @@ export function Hero() {
               asChild
               size="lg"
               variant="outline"
-              className="rounded-md border-2 border-bone/30 bg-transparent font-display text-base font-bold text-bone hover:border-bone/60 hover:bg-transparent hover:text-bone"
+              className="border-2 border-bone/30 bg-transparent font-display text-base font-bold text-bone hover:border-bone/60 hover:bg-transparent hover:text-bone"
             >
               <Link href="#pros">Book a technician</Link>
             </Button>
@@ -59,7 +59,7 @@ export function Hero() {
 
         <div className="relative mx-auto w-full max-w-md lg:mx-0 lg:justify-self-end">
           <div className="absolute -inset-2 rounded-sm border-2 border-dashed border-safety/40" />
-          <article className="animate-ticket relative grid grid-cols-[44px_1fr] overflow-hidden rounded-sm border-2 border-ink/80 bg-ticket-hi text-ink shadow-[10px_10px_0_rgba(20,17,13,0.45)]">
+          <article className="animate-ticket relative grid grid-cols-[44px_1fr] overflow-hidden rounded-sm border-2 border-ink/80 bg-ticket-hi text-ink shadow-[10px_10px_0_rgba(14,28,54,0.45)]">
             <TicketStub top="FixItNow" bottom="FIN-0742" width="w-11" hole="size-6" />
             <div className="p-5 sm:p-6">
               <div className="flex items-start justify-between gap-3">

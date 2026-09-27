@@ -13,7 +13,7 @@ import { updateBookingStatus } from "../_actions/updateBookingStatus";
 const primaryBtn =
   "inline-flex items-center justify-center rounded-sm border-2 border-ink bg-ink px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-bone transition-colors hover:bg-safety hover:text-ink disabled:pointer-events-none disabled:opacity-50";
 const dangerBtn =
-  "inline-flex items-center justify-center rounded-sm border-2 border-ink/70 bg-transparent px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-ink transition-colors hover:border-red-700 hover:bg-red-700 hover:text-white disabled:pointer-events-none disabled:opacity-50";
+  "inline-flex items-center justify-center rounded-sm border-2 border-ink/70 bg-transparent px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-ink transition-colors hover:border-red-700 hover:bg-red-700 hover:text-bone disabled:pointer-events-none disabled:opacity-50";
 
 export function TechnicianBookings({
   initialBookings,
@@ -73,7 +73,7 @@ export function TechnicianBookings({
             return (
               <li
                 key={b.id}
-                className="rounded-md border-2 border-ink bg-bone shadow-[4px_4px_0_rgba(33,30,25,0.1)]"
+                className="rounded-md border-2 border-ink bg-bone shadow-[4px_4px_0_rgba(27,42,74,0.1)]"
               >
                 <div className="flex flex-wrap items-center justify-between gap-2 border-b-2 border-dashed border-ink/15 px-5 py-3">
                   <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em] text-steel">

@@ -56,7 +56,7 @@ export function PaymentConfirmWatcher({
   if (!hasPending) return null;
 
   return (
-    <div className="mt-6 rounded-md border-2 border-dashed border-amber-600/60 bg-amber-50 px-4 py-3">
+    <div className="mt-6 rounded-sm border-2 border-dashed border-amber-700/60 bg-ticket px-4 py-3">
       <p className="font-mono text-[10px] font-bold uppercase tracking-[0.22em] text-amber-900">
         Payment confirming…
       </p>

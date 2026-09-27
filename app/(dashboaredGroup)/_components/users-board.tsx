@@ -78,7 +78,7 @@ export function UsersBoard({
       <form
         action="/admin-dashboard/users"
         method="get"
-        className="border-2 border-ink bg-bone p-4 shadow-[4px_4px_0_rgba(33,30,25,0.1)]"
+        className="border-2 border-ink bg-bone p-4 shadow-[4px_4px_0_rgba(27,42,74,0.1)]"
       >
         <div className="flex flex-wrap items-end gap-3">
           <div className="min-w-0 flex-1 basis-52">
@@ -154,7 +154,7 @@ export function UsersBoard({
       </div>
 
       {error ? (
-        <div className="border-2 border-ink bg-bone p-6 shadow-[4px_4px_0_rgba(33,30,25,0.1)]">
+        <div className="border-2 border-ink bg-bone p-6 shadow-[4px_4px_0_rgba(27,42,74,0.1)]">
           <p className="font-mono text-[10px] font-bold uppercase tracking-[0.25em] text-red-700">
             Roster unavailable
           </p>
@@ -166,7 +166,7 @@ export function UsersBoard({
           </p>
         </div>
       ) : users.length > 0 ? (
-        <div className="overflow-hidden rounded-md border-2 border-ink bg-bone shadow-[4px_4px_0_rgba(33,30,25,0.1)]">
+        <div className="overflow-hidden rounded-md border-2 border-ink bg-bone shadow-[4px_4px_0_rgba(27,42,74,0.1)]">
           <div
             className={`hidden gap-x-4 border-b-2 border-ink bg-board px-5 py-2.5 lg:grid ${ROSTER_COLS}`}
           >
@@ -214,7 +214,7 @@ export function UsersBoard({
                         className="size-10 shrink-0 rounded-[3px] border-2 border-ink/25 object-cover"
                       />
                     ) : (
-                      <span className="flex size-10 shrink-0 items-center justify-center rounded-[3px] border-2 border-ink/25 bg-ticket font-display text-sm font-bold text-ink shadow-[inset_0_-2px_0_rgba(33,30,25,0.12)]">
+                      <span className="flex size-10 shrink-0 items-center justify-center rounded-[3px] border-2 border-ink/25 bg-ticket font-display text-sm font-bold text-ink shadow-[inset_0_-2px_0_rgba(27,42,74,0.12)]">
                         {initial}
                       </span>
                     )}
@@ -262,8 +262,8 @@ export function UsersBoard({
                       onClick={() => setBanTarget(user)}
                       className={
                         user.status === "ACTIVE"
-                          ? "w-fit rounded-xs border-2 border-ink/70 px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-ink transition-colors hover:border-red-700 hover:bg-red-700 hover:text-white"
-                          : "w-fit rounded-xs border-2 border-green-700/70 px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-green-700 transition-colors hover:bg-green-700 hover:text-white"
+                          ? "w-fit rounded-xs border-2 border-ink/70 px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-ink transition-colors hover:border-red-700 hover:bg-red-700 hover:text-bone"
+                          : "w-fit rounded-xs border-2 border-green-700/70 px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-green-700 transition-colors hover:bg-green-700 hover:text-bone"
                       }
                     >
                       {user.status === "ACTIVE" ? "Ban" : "Unban"}

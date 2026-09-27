@@ -42,13 +42,13 @@ function WorkshopFile({ user }: { user: User }) {
   const profile = user.technicianProfile;
 
   return (
-    <div className="relative overflow-hidden rounded-md border-2 border-ink bg-bone shadow-[4px_4px_0_rgba(33,30,25,0.1)]">
+    <div className="relative overflow-hidden rounded-md border-2 border-ink bg-bone shadow-[4px_4px_0_rgba(27,42,74,0.1)]">
       <div className="flex items-center justify-between gap-3 border-b-2 border-dashed border-ink/20 px-6 py-4">
         <p className="font-mono text-[10px] font-bold uppercase tracking-[0.25em] text-safety">
           Workshop file
         </p>
         {profile?.isVerified ? (
-          <span className="inline-flex items-center gap-1.5 rounded-sm border-2 border-ink px-2 py-1 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-ink shadow-[2px_2px_0_rgba(33,30,25,0.18)]">
+          <span className="inline-flex items-center gap-1.5 rounded-sm border-2 border-ink px-2 py-1 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-ink shadow-[2px_2px_0_rgba(27,42,74,0.18)]">
             <Check className="size-3" aria-hidden />
             Verified
           </span>
@@ -146,7 +146,7 @@ export function RecordCard({ user }: { user: User }) {
         </p>
       </header>
 
-      <div className="relative overflow-hidden rounded-md border-2 border-ink bg-bone shadow-[4px_4px_0_rgba(33,30,25,0.1)]">
+      <div className="relative overflow-hidden rounded-md border-2 border-ink bg-bone shadow-[4px_4px_0_rgba(27,42,74,0.1)]">
         <span
           aria-hidden
           className="absolute left-3 top-3 size-4 rounded-full bg-ticket-hi ring-2 ring-edge"
@@ -175,7 +175,7 @@ export function RecordCard({ user }: { user: User }) {
           ) : (
             <span
               aria-hidden
-              className="flex size-24 shrink-0 items-center justify-center rounded-full bg-safety font-display text-4xl font-bold text-ink shadow-[inset_0_-3px_0_rgba(33,30,25,0.18)] ring-2 ring-ink/15"
+              className="flex size-24 shrink-0 items-center justify-center rounded-full bg-safety font-display text-4xl font-bold text-ink shadow-[inset_0_-3px_0_rgba(27,42,74,0.18)] ring-2 ring-ink/15"
             >
               {initial}
             </span>
@@ -185,7 +185,7 @@ export function RecordCard({ user }: { user: User }) {
               {user.name}
             </h2>
             <div className="mt-3 flex flex-wrap items-center gap-2">
-              <span className="animate-stamp rounded-sm border-2 border-ink px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-ink shadow-[2px_2px_0_rgba(33,30,25,0.18)]">
+              <span className="animate-stamp rounded-sm border-2 border-ink px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-ink shadow-[2px_2px_0_rgba(27,42,74,0.18)]">
                 {user.role}
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-sm border border-ink/25 px-2 py-1 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-steel">

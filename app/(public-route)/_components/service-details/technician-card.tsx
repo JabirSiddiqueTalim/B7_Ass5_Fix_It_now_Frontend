@@ -24,7 +24,7 @@ export function TechnicianCard({
   const verified = technician?.isVerified ?? false;
 
   return (
-    <aside className="flex h-fit flex-col border-2 border-ink/80 bg-ticket-hi shadow-[6px_6px_0_rgba(33,30,25,0.25)]">
+    <aside className="flex h-fit flex-col border-2 border-ink/80 bg-ticket-hi shadow-[6px_6px_0_rgba(27,42,74,0.25)]">
       <div className="border-b-2 border-dashed border-ink/20 p-5">
         <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-safety">
           {"// the pro on this job"}

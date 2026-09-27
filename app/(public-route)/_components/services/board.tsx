@@ -99,7 +99,7 @@ export function ServicesBoard({
                   className={cn(
                     "rounded-none border-2 px-3 py-1.5 font-mono text-xs font-bold uppercase tracking-widest transition-transform",
                     active
-                      ? "-translate-y-0.5 border-ink bg-ink text-bone shadow-[3px_3px_0_rgba(33,30,25,0.4)]"
+                      ? "-translate-y-0.5 border-ink bg-ink text-bone shadow-[3px_3px_0_rgba(27,42,74,0.4)]"
                       : "border-ink/70 bg-ticket text-ink hover:bg-ticket"
                   )}
                 >

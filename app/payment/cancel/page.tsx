@@ -10,7 +10,7 @@ function PaymentCancelContent() {
 
   return (
     <div className="flex min-h-[60vh] items-center justify-center p-8">
-      <div className="w-full max-w-md rounded-md border-2 border-ink bg-bone p-8 shadow-[6px_6px_0_rgba(33,30,25,0.15)]">
+      <div className="w-full max-w-md rounded-md border-2 border-ink bg-bone p-8 shadow-[6px_6px_0_rgba(27,42,74,0.15)]">
         <p className="font-mono text-[10px] font-bold uppercase tracking-[0.25em] text-red-700">
           Payment cancelled
         </p>

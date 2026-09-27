@@ -14,7 +14,7 @@ export function JobTicket({
   const jobs = service._count?.bookings ?? 0;
 
   return (
-    <article className="animate-ticket grid overflow-hidden border-2 border-ink/80 bg-ticket-hi shadow-[10px_10px_0_rgba(33,30,25,0.35)] sm:grid-cols-[52px_1fr]">
+    <article className="animate-ticket grid overflow-hidden border-2 border-ink/80 bg-ticket-hi shadow-[10px_10px_0_rgba(27,42,74,0.35)] sm:grid-cols-[52px_1fr]">
       <aside className="relative hidden border-r-2 border-dashed border-ink/40 bg-ticket sm:block">
         <span className="absolute left-1/2 top-4 -translate-x-1/2 font-mono text-[10px] uppercase tracking-[0.2em] text-steel [writing-mode:vertical-rl]">
           {serial}

@@ -10,13 +10,13 @@ type Tone =
   | "zinc";
 
 const toneClasses: Record<Tone, string> = {
-  neutral: "bg-muted text-muted-foreground",
-  green: "bg-green-100 text-green-800",
-  amber: "bg-amber-100 text-amber-800",
-  red: "bg-red-100 text-red-700",
-  blue: "bg-blue-100 text-blue-800",
-  purple: "bg-purple-100 text-purple-800",
-  zinc: "bg-muted text-muted-foreground",
+  neutral: "border-ink/30 bg-ticket text-steel",
+  green: "border-green-800/50 bg-ticket text-green-900 dark:border-green-500/50 dark:text-green-300",
+  amber: "border-amber-800/50 bg-ticket text-amber-900 dark:border-amber-500/50 dark:text-amber-300",
+  red: "border-red-700/50 bg-ticket text-red-800 dark:border-red-500/50 dark:text-red-300",
+  blue: "border-blue-800/50 bg-ticket text-blue-900 dark:border-blue-500/50 dark:text-blue-300",
+  purple: "border-purple-800/50 bg-ticket text-purple-900 dark:border-purple-500/50 dark:text-purple-300",
+  zinc: "border-ink/30 bg-ticket text-steel",
 };
 
 export function Badge({
@@ -31,7 +31,7 @@ export function Badge({
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-medium",
+        "inline-flex items-center gap-1 rounded-sm border px-2.5 py-0.5 text-xs font-medium",
         toneClasses[tone],
         className
       )}

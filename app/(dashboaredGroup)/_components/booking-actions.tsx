@@ -10,7 +10,7 @@ import { createPayment } from "../_actions/createPayment";
 const primaryBtn =
   "inline-flex items-center justify-center rounded-sm border-2 border-ink bg-ink px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-bone transition-colors hover:bg-safety hover:text-ink disabled:pointer-events-none disabled:opacity-50";
 const dangerBtn =
-  "inline-flex items-center justify-center rounded-sm border-2 border-ink/70 bg-transparent px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-ink transition-colors hover:border-red-700 hover:bg-red-700 hover:text-white";
+  "inline-flex items-center justify-center rounded-sm border-2 border-ink/70 bg-transparent px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-ink transition-colors hover:border-red-700 hover:bg-red-700 hover:text-bone";
 const reviewedBtn =
   "inline-flex items-center justify-center rounded-sm border-2 border-safety bg-safety px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-ink disabled:cursor-default disabled:opacity-80";
 
